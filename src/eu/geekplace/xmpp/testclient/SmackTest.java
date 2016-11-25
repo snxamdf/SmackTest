@@ -43,7 +43,7 @@ public abstract class SmackTest<C extends XMPPConnection> {
 	static void loadProperties() throws IOException {
 		// File propertiesFile = findPropertiesFile();
 		Properties properties = new Properties();
-		properties.setProperty("serv", "201512080143-");
+		properties.setProperty("serv", "07d335610935");
 		properties.setProperty("user", "admin");
 		properties.setProperty("pass", "admin");
 		properties.setProperty("boshserv", "201512080143-");

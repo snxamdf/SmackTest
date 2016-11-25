@@ -43,7 +43,7 @@ public class CreateRoom extends SmackTest<XMPPTCPConnection> {
 		connection = new XMPPTCPConnection(conf.build());
 		connection.connect();
 		connection.login();
-		MultiUserChat muc = CreateRoom.createRoom(connection, "mYroomName1", null);
+		MultiUserChat muc = CreateRoom.createRoom(connection, "mYroomName", null);
 		muc.addMessageListener(new MessageListener() {
 			@Override
 			public void processMessage(Message message) {

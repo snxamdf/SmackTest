@@ -46,7 +46,7 @@ public class User3 extends SmackTest<XMPPTCPConnection> {
 				});
 			}
 		});
-		MultiUserChat muc = JoinMultiUserChat.join(connection, name, name, "mYroomName1");
+		MultiUserChat muc = JoinMultiUserChat.join(connection, name, name, "mYroomName");
 		muc.addMessageListener(new MessageListener() {
 			@Override
 			public void processMessage(Message message) {
@@ -54,7 +54,7 @@ public class User3 extends SmackTest<XMPPTCPConnection> {
 			}
 		});
 		while (true) {
-			//muc.sendMessage("大家好,我是test03.");
+			// muc.sendMessage("大家好,我是test03.");
 			Thread.sleep(1000);
 		}
 		// connection.disconnect();

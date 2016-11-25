@@ -35,8 +35,7 @@ public class Push1 extends SmackTest<XMPPTCPConnection> {
 		connection = new XMPPTCPConnection(conf.build());
 		connection.connect();
 		connection.login();
-
-		MultiUserChat muc = JoinMultiUserChat.join(connection, USER, PASS, "mYroomName1");
+		MultiUserChat muc = JoinMultiUserChat.join(connection, USER, PASS, "mYroomName");
 		muc.addMessageListener(new MessageListener() {
 			@Override
 			public void processMessage(Message message) {
@@ -45,7 +44,7 @@ public class Push1 extends SmackTest<XMPPTCPConnection> {
 		});
 		while (true) {
 			muc.sendMessage("推送的消息内容内容内容内容.");
-			Thread.sleep(1500);
+			Thread.sleep(100);
 		}
 	}
 }
